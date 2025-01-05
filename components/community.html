@@ -1,9 +1,126 @@
-<section id="community">
-  <div class="community">
-    <h1>Join the Community</h1>
-    <p>Connect with others on your health journey.</p>
-    <div class="discussion">
-      <p>Share tips, recipes, and motivation with like-minded individuals.</p>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Community Section -->
+    <main id="community">
+      <div class="community-container">
+        <!-- Create a Post -->
+        <section class="create-post">
+          <h1>Community</h1>
+          <textarea
+            placeholder="Share your thoughts, recipes, or progress..."
+          ></textarea>
+          <button class="cta-button">+ Create Post</button>
+        </section>
+
+        <!-- Posts and Sidebar -->
+        <div class="community-layout">
+          <!-- Posts Section -->
+          <section class="posts">
+            <div class="post-tabs">
+              <button class="tab active">Trending</button>
+              <button class="tab">Recent</button>
+              <button class="tab">Top</button>
+            </div>
+
+            <!-- Post 1 -->
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info">
+                  <i class="bi bi-person-circle"></i>
+                  <span class="username">HealthyEater123</span>
+                  <span class="time">• 2 hours ago</span>
+                </div>
+                <div class="post-stats">
+                  <span class="votes">13</span>
+                  <i class="bi bi-arrow-up-circle"></i>
+                  <i class="bi bi-arrow-down-circle"></i>
+                </div>
+              </div>
+              <div class="post-content">
+                <p>
+                  Just discovered a great low-carb recipe for pizza crust using
+                  cauliflower! Anyone tried this before?
+                </p>
+              </div>
+              <div class="post-actions">
+                <i class="bi bi-chat-left-dots"></i> 3 Comments
+                <i class="bi bi-share"></i> Share
+              </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info">
+                  <i class="bi bi-person-circle"></i>
+                  <span class="username">FitnessFanatic</span>
+                  <span class="time">• 5 hours ago</span>
+                </div>
+                <div class="post-stats">
+                  <span class="votes">32</span>
+                  <i class="bi bi-arrow-up-circle"></i>
+                  <i class="bi bi-arrow-down-circle"></i>
+                </div>
+              </div>
+              <div class="post-content">
+                <p>
+                  Completed my first 5k run today! Any tips for recovery and
+                  preparing for a 10k?
+                </p>
+              </div>
+              <div class="post-actions">
+                <i class="bi bi-chat-left-dots"></i> 7 Comments
+                <i class="bi bi-share"></i> Share
+              </div>
+            </div>
+          </section>
+
+          <!-- Sidebar -->
+          <aside class="community-sidebar">
+            <div class="community-stats">
+              <h3>Community Stats</h3>
+              <p>Total Members</p>
+              <h2>5,231</h2>
+            </div>
+            <div class="trending-topics">
+              <h3>Trending Topics</h3>
+              <ul>
+                <li>#HealthyEating</li>
+                <li>#FitnessTips</li>
+                <li>#MealPrep</li>
+                <li>#NutritionGoals</li>
+              </ul>
+            </div>
+            <div class="top-contributors">
+              <h3>Top Contributors</h3>
+              <ul>
+                <li>HealthGuru</li>
+                <li>FitnessFanatic</li>
+                <li>NutritionNinja</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="../assets/js/include.js" defer></script>
+  </body>
+</html>

@@ -326,19 +326,134 @@ footer {
 
 /* Logo */
 .logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
 }
 
 .logo i {
-    margin-right: 10px; /* Space between icon and text */
-    color: #4CAF50; /* Logo icon color */
+  margin-right: 10px; /* Space between icon and text */
+  color: #4caf50; /* Logo icon color */
 }
 
 .logo a:hover i {
-    color: #45a049; /* Change icon color on hover */
+  color: #45a049; /* Change icon color on hover */
+}
+
+/* Community Page */
+.community-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-post {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-post textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.create-post .cta-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.community-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.time {
+  color: #888;
+}
+
+.post-stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-content {
+  margin: 10px 0;
+}
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+  color: #666;
+}
+
+.community-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.community-stats,
+.trending-topics,
+.top-contributors {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trending-topics ul,
+.top-contributors ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
