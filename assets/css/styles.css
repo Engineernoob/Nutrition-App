@@ -323,3 +323,22 @@ footer {
 #meal-list li:last-child {
   border-bottom: none;
 }
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #4CAF50; /* Logo icon color */
+}
+
+.logo a:hover i {
+    color: #45a049; /* Change icon color on hover */
+}
